@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="Traffic Ticket SystemPU" transaction-type="RESOURCE_LOCAL">
+    <provider>oracle.toplink.essentials.PersistenceProvider</provider>
+    <class>javaproject.PoliceDivision</class>
+    <class>javaproject.PoliceTable</class>
+    <class>javaproject.Offender</class>
+    <class>javaproject.Tickets</class>
+    <properties>
+      <property name="toplink.jdbc.user" value="Administrator"/>
+      <property name="toplink.jdbc.password" value="admin1234"/>
+      <property name="toplink.jdbc.url" value="jdbc:derby://localhost:1527/Traffic Ticket System"/>
+      <property name="toplink.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+    </properties>
+  </persistence-unit>
+</persistence>
